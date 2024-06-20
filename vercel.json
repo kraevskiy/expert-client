@@ -1,5 +1,9 @@
 {
   "rewrites":  [
+    {
+      "source": "/api",
+      "destination": "https://expert-server-io8e.onrender.com/api"
+    },
     {"source": "/(.*)", "destination": "/"}
   ]
 }
