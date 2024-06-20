@@ -1,9 +1,12 @@
 {
-  "rewrites":  [
+  "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://expert-server-io8e.onrender.com/api"
+      "source": "/api/:path(.*)",
+      "destination": "https://expert-server-io8e.onrender.com/api/:path"
     },
-    {"source": "/(.*)", "destination": "/"}
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
